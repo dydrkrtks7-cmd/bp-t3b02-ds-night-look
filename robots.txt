@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zone-karaoke-note.best-hapjeong-pub.xyz/sitemap.xml
+Sitemap: https://zone-karaoke-note.best-hapjeong-pub.xyz/sitemap-pages.xml

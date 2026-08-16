@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>상암 가라오케 예약 시스템의 실체</title>
+<meta name="description" content="상암 지역 가라오케의 예약 절차, 이용 요금, 시설 정보 및 이용 시 유의사항을 종합적으로 안내합니다.">
+<meta name="keywords" content="상암 가라오케, 상암 노래방, 가라오케 예약 정보, 상암 엔터테인먼트, 이용 안내">
+<link rel="canonical" href="https://zone-karaoke-note.best-hapjeong-pub.xyz/about.html">
+<meta property="og:title" content="상암 가라오케 예약 시스템의 실체">
+<meta property="og:description" content="상암 지역 가라오케의 예약 절차, 이용 요금, 시설 정보 및 이용 시 유의사항을 종합적으로 안내합니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zone-karaoke-note.best-hapjeong-pub.xyz/about.html">
+<meta property="og:image" content="https://zone-karaoke-note.best-hapjeong-pub.xyz/assets/og-info.jpg">
+<style>
+:root {
+  --k-blue-400: #3b82f6;
+  --k-slate-800: #1e293b;
+  --k-slate-900: #0f172a;
+  --k-white: #ffffff;
+  --k-slate-200: #e2e8f0;
+  --k-slate-300: #cbd5e1;
+  --k-slate-400: #94a3b8;
+  --k-slate-50: #f8fafc;
+  --k-slate-600: #475569;
+  --k-slate-700: #334155;
+  --k-radius: 0.5rem;
+  --k-transition: 0.2s ease-in-out;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--k-slate-900);
+  color: var(--k-slate-200);
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+header {
+  background: var(--k-slate-800);
+  padding: 1rem;
+  border-bottom: 1px solid var(--k-slate-700);
+}
+.k-ico-b3ox {
+  width: 2rem;
+  height: 2rem;
+  background: var(--k-blue-400);
+  border-radius: var(--k-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--k-white);
+}
+.n-body-rqx8 {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.q-nav-bzsa {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--k-slate-800);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--k-slate-700);
+  z-index: 50;
+}
+.m-head-o7v3 {
+  display: none;
+}
+.m-head-o7v3:checked ~ .q-nav-bzsa {
+  border-radius: var(--k-radius);
+}
+.m-head-o7v3:checked ~ .q-nav-bzsa ul {
+  display: flex;
+}
+.q-nav-bzsa ul {
+  display: none;
+  list-style: none;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.q-nav-bzsa li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: var(--k-radius);
+  transition: background var(--k-transition);
+  font-size: 0.875rem;
+}
+.q-nav-bzsa li a:hover,
+.q-nav-bzsa li a[aria-current="page"] {
+  background: var(--k-slate-700);
+  color: var(--k-white);
+}
+.r-top-21cg {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  background: var(--k-blue-400);
+  color: var(--k-white);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity var(--k-transition);
+  z-index: 40;
+}
+.r-top-21cg span {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-left: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg) translateY(25%);
+}
+.info-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.info-section {
+  background: var(--k-slate-800);
+  padding: 2rem;
+  border-radius: var(--k-radius);
+  border: 1px solid var(--k-slate-700);
+}
+.info-section h2 {
+  font-size: 1.5rem;
+  color: var(--k-white);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--k-blue-400);
+}
+.info-list {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+.info-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+.info-label {
+  font-weight: 600;
+  color: var(--k-slate-400);
+  min-width: 6rem;
+}
+.info-detail {
+  color: var(--k-slate-200);
+}
+.warning-box {
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 4px solid var(--k-blue-400);
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+.footer-content {
+  margin-top: 4rem;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid var(--k-slate-700);
+  color: var(--k-slate-400);
+  font-size: 0.875rem;
+}
+</style>
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+<header>
+  <div class="k-ico-b3ox">ZK</div>
+</header>
+
+<main>
+      <h1>상암 가라오케 예약 시스템의 실체</h1>
+      <div class="content">
+        <p>상암에서 가라오케를 찾는 사람들은 대부분 목적이 명확하다. 업무 접대거나 늦은 회식의 연장이다. 목적이 분명할수록 시간 낭비는 치명적이다. 불필요한 탐색 과정을 생략하고 예약하는 법을 정리했다. 이 공간은 화려한 수식어 대신 실제 예약이 가능한 경로를 최단 거리로 연결하는 것을 목적으로 한다. 정보의 과잉은 선택 장애만 유발할 뿐이니 핵심만 파악하고 실행에 옮기는 것이 가장 효율적이다.</p>
+        <p>예약 과정에서 가장 흔히 발생하는 병목 현상은 소통 방식의 오류다. 전화기를 붙들고 실랑이할 필요는 없다. 가라오케 운영 시간과 인원 구성, 그리고 기본적인 선호 사항만 준비하면 예약은 십 분 안에 끝난다. 현장 상황을 실시간으로 확인하는 시스템은 없으니, 미리 연락해서 빈틈을 확인하는 것이 예약 성공의 유일한 변수다. 괜히 현장에 가서 발길을 돌리는 사태만큼은 피해야 한다.</p>
+        <p>상암 인근 업소들의 정보는 파편화되어 있다. 검색창에서 검색 결과만 나열된 페이지를 넘기느라 시간을 쓰지 마라. 이곳은 유효한 연락망과 예약 시 확인해야 할 체크리스트를 정렬해 뒀다. 방의 크기나 주류 구성 같은 세부 사항은 문의 단계에서 한 번에 묻는 것이 뒤탈이 없다. 질문은 짧게 하고 답변은 명확히 받아두면 된다. 모호한 예약은 반드시 현장에서 문제를 일으킨다.</p>
+        <p>업소에 예약 메시지를 보낼 때는 반드시 인원과 시간대를 명시하라. 추상적인 문의는 업주 입장에서도 후순위다. 확실한 수요를 보여주면 응답 속도가 달라진다. 본인은 이 시스템을 관리하며 확보한 연락 경로를 통해 예약의 속도를 높이는 법을 제공할 뿐이다. 서비스의 질이나 분위기 같은 주관적 평가는 배제한다. 당신에게 필요한 것은 목적지에 도달하는 정확한 주소와 연락처, 그리고 예약이 확정되었다는 증표뿐이다. 나머지는 직접 현장에서 판단할 문제다.</p>
+      </div>
+    </main>
+
+<nav class="q-nav-bzsa">
+  <input type="checkbox" id="nav-toggle" class="m-head-o7v3">
+  <label for="nav-toggle" style="cursor: pointer; padding: 0.5rem 1rem; color: var(--k-slate-300); display: block;">메뉴</label>
+  <ul>
+    <li><a href="/home">홈</a></li>
+    <li><a href="/reservation">예약 방법</a></li>
+    <li><a href="/info" aria-current="page">정보</a></li>
+    <li><a href="/faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<div class="r-top-21cg" aria-label="페이지 상단으로 이동">
+  <span></span>
+</div>
+
+<footer class="footer-content">
+  <p>© 2024 Zone Karaoke Note. 상암 지역 가라오케 정보 포털.</p>
+</footer>
+</body>
+</html>
